@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOODY</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>hello, stranger.</h1>
+    <main>
+      <script>
+        const urlParans = new URLSearchParams(window.location.search);
+        const FirstName = urlParans.get("first-name");
+        console.log(FirstName);
+        if (FirstName) {
+          document.querySelector("h1").textContent = `Hello,${FirstName}.`;
+        }
+      </script>
+    </main>
+  </body>
+</html>
