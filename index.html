@@ -9,7 +9,58 @@
   <body>
     <main>
       <form action="greet.html" method="get">
-          <input type="text" name="first-name"id="FirstName" />
+          <p>
+            <label for="FirstName">what is your name?</label>
+            <input type="text"required name="first-name"id="FirstName" />
+        </p>
+        <p>
+            <label for="FirstName">what is your email?</label>
+            <input type="email" required name="first-name"id="email"/>
+        </p>
+        <p>
+            <label for="FirstName">how old are you?</label>
+            <input type="number"name="first-name"id="age"min="0"/>
+        </p>
+        <P>
+            <Label for="password"> your password?</Label>
+            <input type="password"name="password"id="Password"/>
+        </P>
+        <fieldset>
+            <legend>what is your prefered diet</legend>
+        <p>
+            <label for="beef">
+                <input value="beef" type="radio" name="diet"id="beef" /> beef
+            </label>
+            <label for="chicken"></label>
+                <input value="chicken" type="radio" name="diet"id="chicken" /> chicken
+            </label>
+            <label for="mokgodu"></label>
+                <input value="mokgodu" type="radio" name="diet"id="mokgodu" /> mokgodu
+            </label>
+            <label for="fish"></label>
+                <input value="fish" type="radio" name="diet"id="mokgodu" /> fish
+            </label>
+        </p>
+        <p>
+            <label for="beverage">choose your prefered drinks</label>
+            <select name="beverage" id="beverage">
+            <option value="black-lable">Caling Black-Lable</option>
+            <option value="soft drink">Soft drink</option>
+            <option value="grape juice">Grape Juice</option>
+            <option value="still water">Still Water</option>
+            </select>
+        </p>
+    <p>
+    <label for="DietAdditions">Allegies, if any</label>
+    <textarea name="diet-allegies"id="diet additions" placeholder="what Allegies do you have. if any."cols="160" rows="5"></textarea>
+    </p>
+        </fieldset>
+        <p>
+            <label><input type="checkbox"name="merry-me"/> will you marry me? </label>
+        </p>
+        <p>
+            <button type="submit">submit</button>
+        </p>
         <form>
     </main>
   </body>
